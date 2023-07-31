@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span style="color: #44dea5">C</span>AESAR
+        <span style="color: #44dea5">C</span>IPHER
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Alat</a></li>
+        <li><a href="index1.html">Definisi</a></li>
+        <li><a href="index2.html">Analisis</a></li>
+        <li><a href="index3.html">kontak</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="content content-tengah">
+        <h2>Penjelasan Rumus</h2>
+        <center><img src="img/cc.png" height="140" /></center>
+        <br />
+
+        Rumus matematis untuk mengenkripsi menggunakan metode Caesar Cipher
+        adalah :
+        <br /><br />
+        C = (P + n) mod 26 <br /><br />
+
+        Di mana : C adalah huruf terenkripsi, P adalah huruf asli, n adalah
+        jumlah langkah pergeseran, 26 adalah jumlah huruf dalam alfabet Inggris.
+        Rumus tersebut mengambil nilai posisi huruf asli (P) dalam alfabet,
+        menambahkannya dengan jumlah langkah pergeseran (n), dan kemudian
+        mengambil hasil modulo 26 untuk memastikan hasil pergeseran tetap dalam
+        rentang huruf alfabet. Untuk mendekripsi pesan yang dienkripsi, rumus
+        yang sama digunakan dengan nilai pergeseran yang berlawanan. Dalam hal
+        ini, rumusnya menjadi :<br /><br />
+        P = (C - n) mod 26 <br /><br />
+
+        Di mana : P adalah huruf asli yang telah didekripsi, C adalah huruf
+        terenkripsi, n adalah jumlah langkah pergeseran. Dengan menggunakan
+        rumus tersebut, Kita dapat mengenkripsi atau mendekripsi teks
+        menggunakan metode Caesar Cipher dengan memperhatikan langkah-langkah
+        pergeseran yang diinginkan.
+        <br />
+      </div>
+
+      <div class="content content-kanan">
+        <div class="container1"><h2 class="header">Alat konversi CC</h2></div>
+
+        <div class="container">
+          <div class="input-group a1">
+            <label for="">InputText :</label>
+            <input
+              type="text"
+              id="input"
+              placeholder="Inputkan teks deskripsi atau enkripsi disini."
+              name="textfield"
+              value=""
+            />
+          </div>
+
+          <div class="input-group a2">
+            <label for="">Shift [0-26]:</label>
+            <div class="input2">
+              <input
+                min="0"
+                max="26"
+                type="number"
+                id="shift"
+                placeholder="Inputkan jumlah deretan."
+                value="0"
+              />
+              <select id="options" onchange="swapText()">
+                <option value="encrypt" selected>Encryption</option>
+                <option value="decrypt">Decryption</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group A">
+            <button onclick="getResult()" class="button button5">
+              Konversikan
+            </button>
+          </div>
+
+          <div class="input-group">
+            <textarea
+              type="textarea"
+              id="output"
+              placeholder="Hasil konversi dari deskripsi ke enkripsi ataupun sebaliknya."
+              readonly
+            ></textarea>
+          </div>
+
+          <div class="input-group B">
+            <button onclick="clearText()" class="button button6">Clear</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Kelompok 5 - Caesar Cipher</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

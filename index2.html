@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Caesar Cipher Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <span style="color: #44dea5">C</span>AESAR
+        <span style="color: #44dea5">C</span>IPHER
+      </div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Alat</a></li>
+        <li><a href="index1.html">Definisi</a></li>
+        <li><a class="active" href="index2.html">Analisis</a></li>
+        <li><a href="index3.html">kontak</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="content content-tengah">
+        <h2>Kelebihan Metode CC</h2>
+        <center><img src="img/ht3.gif" height="140" /></center>
+        <br />
+        <span>1. Sederhana dan mudah dipahami,</span> Caesar Cipher adalah salah
+        satu metode enkripsi yang paling sederhana. Algoritmanya melibatkan
+        pergeseran sederhana pada setiap huruf, yang membuatnya mudah dipahami
+        dan diimplementasikan bahkan oleh pemula. <br /><br />
+        <span>2. Efisien dalam kinerja,</span> Metode Caesar Cipher memiliki
+        kinerja yang cepat dalam melakukan enkripsi dan dekripsi. Operasi
+        pergeseran sederhana pada setiap karakter dalam teks tidak memerlukan
+        sumber daya komputasi yang tinggi, sehingga sangat efisien dalam hal
+        waktu dan penggunaan daya komputasi. <br /><br />
+        <span>3. Penggunaan pendidikan dan pemahaman dasar,</span> Caesar Cipher
+        sering digunakan sebagai pengantar pertama dalam mempelajari
+        kriptografi. Metode ini memberikan pemahaman dasar tentang konsep
+        enkripsi dan dekripsi, serta memperkenalkan beberapa konsep kunci dalam
+        kriptografi, seperti kunci, plaintext, dan ciphertext. <br /><br />
+      </div>
+      <div class="content content-tengah">
+        <h2>Kekurangan Metode CC</h2>
+        <center><img src="img/ht2.gif" height="140" class="img" /></center>
+        <br />
+        <span>1. Rentan terhadap serangan brute force,</span> Caesar Cipher
+        memiliki jumlah kunci yang terbatas karena hanya ada 26 pergeseran yang
+        mungkin (dalam alfabet bahasa Inggris). Dengan jumlah yang terbatas ini,
+        serangan brute force dapat dengan mudah mencoba semua kemungkinan
+        pergeseran untuk mendapatkan teks asli. <br /><br />
+        <span>2. Tidak dapat mengenkripsi karakter non-alfabet,</span> Secara
+        umum Caesar Cipher dirancang khusus untuk alfabet Latin saja, yang
+        berarti hanya dapat mengenkripsi huruf-huruf dalam alfabet tersebut.
+        Simbol-simbol, angka, atau karakter khusus lainnya tidak akan
+        terpengaruh oleh enkripsi ini dan tetap tidak berubah. Hal ini
+        menyebabkan kelemahan dalam mengamankan pesan yang mungkin mengandung
+        karakter-karakter non-alfabet.<br /><br />
+        <span>3. Rentan terhadap analisis frekuensi,</span> Karena Caesar Cipher
+        hanya melakukan pergeseran pada huruf-huruf dalam alfabet, pola
+        frekuensi huruf dalam teks terenkripsi tetap sama seperti teks asli.
+        Serangan analisis frekuensi dapat dengan mudah memecahkan metode Caesar
+        Cipher dengan menganalisis pola frekuensi huruf dalam teks terenkripsi.
+      </div>
+    </main>
+
+    <footer>
+      <p>Kelompok 5 - Caesar Cipher</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
